@@ -1,0 +1,3 @@
+
+
+CREATE TABLE SHOWS (id UUID DEFAULT uuid_generate_v4() ,organizer VARCHAR(255) NOT NULL,show VARCHAR(255) NOT NULL,price INT NOT NULL,quantity INT NOT NULL,TicketsRem INT ,PRIMARY KEY(id));

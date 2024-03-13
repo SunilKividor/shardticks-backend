@@ -9,3 +9,8 @@ type User struct {
 	Password     string    `json:"password"`
 	RefreshToken string    `json:"refresh_token"`
 }
+
+type OrganizerNFTs struct {
+	Username string `json:"username"`
+	NFTids   []int  `json:"nft_ids"`
+}

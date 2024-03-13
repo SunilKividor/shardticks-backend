@@ -56,6 +56,7 @@ func Login(c *gin.Context) {
 	}
 	//send the tokens to frontend
 	var res models.AuthResModel
+	res.Username = body.Username
 	res.AccessToken = accessToken
 	res.RefreshToken = refreshToken
 	c.JSON(http.StatusOK, res)
@@ -115,6 +116,7 @@ func Signup(c *gin.Context) {
 	}
 
 	var res models.AuthResModel
+	res.Username = body.Username
 	res.AccessToken = accessToken
 	res.RefreshToken = refreshToken
 	c.JSON(http.StatusOK, res)
